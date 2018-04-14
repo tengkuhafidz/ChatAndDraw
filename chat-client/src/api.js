@@ -1,6 +1,6 @@
 import io from 'socket.io-client';
 
-const socket = io('http://172.25.101.194:4000');
+const socket = io('http://localhost:4000');
 
 const sendMessage = (message) => {
 	socket.emit('chat', message);
